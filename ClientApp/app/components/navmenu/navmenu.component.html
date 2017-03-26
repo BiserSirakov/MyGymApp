@@ -1,4 +1,4 @@
-<div class='main-nav'>
+<!--<div class='main-nav'>
     <div class='navbar navbar-inverse'>
         <div class='navbar-header'>
             <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
@@ -30,4 +30,30 @@
             </ul>
         </div>
     </div>
-</div>
+</div>-->
+
+
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <ul class="nav navbar-nav row text-center">
+        <li class="col-xs-3" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/home']">
+                <span class='glyphicon glyphicon-home'></span>
+            </a>
+        </li>
+        <li class="col-xs-3" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/counter']">
+                <span class='glyphicon glyphicon-education'></span>
+            </a>
+        </li>
+        <li class="col-xs-3" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/fetch-data']">
+                <span class='glyphicon glyphicon-th-list'></span>
+            </a>
+        </li>
+        <li class="col-xs-3" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/my-component']">
+                <span class='glyphicon glyphicon-bullhorn'></span>
+            </a>
+        </li>
+    </ul>
+</nav>
