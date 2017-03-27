@@ -17,7 +17,6 @@ module.exports = (env) => {
         entry: {
             vendor: [
                 '@angular/common',
-                '@angular/animations',
                 '@angular/compiler',
                 '@angular/core',
                 '@angular/http',
