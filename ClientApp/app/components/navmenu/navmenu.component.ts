@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
     templateUrl: './navmenu.component.html',
     styleUrls: ['./navmenu.component.scss']
 })
-export class NavMenuComponent {
-}
+
+export class NavMenuComponent {}
