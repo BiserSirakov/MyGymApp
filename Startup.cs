@@ -7,7 +7,7 @@ namespace MyGymApp
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
 
-    public class Startup
+    public partial class Startup
     {
         public Startup(IHostingEnvironment env)
         {
@@ -45,6 +45,8 @@ namespace MyGymApp
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            ConfigureAuth(app);
 
             app.UseStaticFiles();
 
